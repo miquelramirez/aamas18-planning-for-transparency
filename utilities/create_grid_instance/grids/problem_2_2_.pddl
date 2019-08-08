@@ -1,0 +1,20 @@
+(define (problem nine)
+	(:domain grid_domain)
+	(:objects  P1 P2 P3 P4)
+	(:init
+		(adj P1 P2)
+		(adj P1 P3)
+		(adj P2 P1)
+		(adj P2 P4)
+		(adj P3 P4)
+		(adj P3 P1)
+		(adj P4 P3)
+		(adj P4 P2)
+		(pos P1)
+	)
+	(:goal
+		(and
+			(pos P4)
+		)
+	)
+)

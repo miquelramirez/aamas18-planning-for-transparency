@@ -1,0 +1,109 @@
+#ifndef __H_RP__
+#define __H_RP__
+
+#include <aptk/search_prob.hxx>
+#include <aptk/heuristic.hxx>
+#include <strips_state.hxx>
+#include <strips_prob.hxx>
+#include "planrec.hxx"
+
+namespace aptk {
+
+namespace agnostic {
+
+template < typename Search_Model, bool approx >
+class	Plan_Recognition_Heuristic : public Heuristic<State> {
+public:
+
+	Plan_Recognition_Heuristic( const Search_Model& prob)
+	: Heuristic<State>( prob ), m_strips_model( prob.task() ), m_index(0){
+
+    for (unsigned int i = 0; i < m_strips_model.goal_set(m_strips_model).size(); i++){
+      if (m_strips_model.goal_set(m_strips_model)[i] == m_strips_model.goal())
+        m_index = i;
+    }
+
+	}
+
+	virtual ~Plan_Recognition_Heuristic() {
+	}
+
+  template <typename Search_Node>
+  void eval( Search_Node* n, float& h_val) {
+
+    std::vector<aptk::Fluent_Vec> goal_set = m_strips_model.goal_set(m_strips_model);
+    std::vector<double> priors = m_strips_model.priors(m_strips_model);
+    float beta = m_strips_model.beta(m_strips_model);
+    float rank = 1;
+    std::vector<double> posteriors;
+    aptk::Fluent_Vec init = m_strips_model.init();
+
+    if (n->parent() == NULL){
+      h_val = goal_set.size()-1 + (1 - priors[m_index]);
+      /*
+       *std::cout << "Rank: " << h_val << std::endl;
+       */
+      return;
+    }
+
+    // Get observations by tracing back through the path so far
+    std::vector<unsigned int> observations;
+    get_observations<Search_Node>(n, observations);
+
+    /*
+     *std::cout << "Observations: " << std::endl;
+     *for (unsigned int i = 0; i < observations.size(); i++){
+     *  std::cout << observations[i] << ": " << m_strips_model.actions()[observations[i]]->signature() << std::endl;
+     *}
+     */
+
+    // Do plan recognition to produce posteriors
+    if (!approx)
+      posteriors =  plan_recognition(m_strips_model, goal_set, priors, observations, init, beta);
+    else
+      posteriors =  plan_recognition_approx(m_strips_model, goal_set, priors, observations, init, beta);
+
+    /*
+     *std::cout << "Posteriors: " << std::endl;
+     *print_vector(posteriors);
+     */
+
+    // Count the number of goals with greater posterior than the goal
+    for (unsigned int i = 0; i < posteriors.size(); i++){
+      if (m_index != i)
+        if (posteriors[i] >= posteriors[m_index])
+          rank++;
+    }
+
+    /*
+     *std::cout << "Rank: " << rank << std::endl << std::endl;
+     *std::cout << "Length: " << observations.size() << std::endl;
+     */
+
+    h_val = 1 - posteriors[m_index];
+    //h_val = rank + (1 - posteriors[m_index]);
+
+  }
+
+protected:
+
+	const STRIPS_Problem&	m_strips_model;
+	unsigned int m_index;
+
+  // Recursively pull the observations from a node
+  template <typename Search_Node>
+  void get_observations(const Search_Node* n, std::vector<unsigned>& acc){
+    if(n->parent() == NULL)
+      return;
+    get_observations(n->parent(), acc);
+    acc.push_back(n->action());
+
+  }
+
+};
+
+}
+
+}
+
+#endif

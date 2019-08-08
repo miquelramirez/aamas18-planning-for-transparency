@@ -1,0 +1,3 @@
+(isPath P0 P4),(isPath P4 P3),
+(isPath P3 P5),(isPath P3 P2),
+(isPath P6 P3),(isPath P5 P6),

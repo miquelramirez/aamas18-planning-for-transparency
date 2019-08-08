@@ -1,0 +1,1 @@
+(pick-up S),(stack S N),(pick-up A),(stack A S)

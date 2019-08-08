@@ -1,0 +1,15 @@
+PDDL problem description loaded: 
+	Domain: BLOCKS_WORLD
+	Problem: NINE
+	#Actions: 80
+	#Fluents: 24
+Initial State: (ON-TABLE D), (ON-TABLE C), (CLEAR C), (CLEAR D), (ON-TABLE A), (ON B A), (CLEAR B)
+Goal State: (ON C D), (ON B C), (ON A B)
+Plan found with cost: 2.4
+1. HUMAN_ACTION(ON C D)
+2. HUMAN_ACTION(ON A B)
+3. HUMAN_ACTION(ON B C)
+Time: 0.084
+Generated: 3934
+Expanded: 226
+Best First H_max search completed in 0.084 secs, found plan cost = 2.4

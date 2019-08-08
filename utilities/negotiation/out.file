@@ -1,0 +1,915 @@
+ --- OK.
+ Match tree built with 80 nodes.
+
+
+ Match tree built with 128 nodes.
+
+Search starts: 
+	 Bound: inf
+	 Best h(n) = 0.8, expanded: 0, generated: 1
+Total time: 0.064
+Nodes generated during search: 3935
+Nodes expanded during search: 226
+Nodes pruned by bound: 0
+Dead-end nodes: 0
+Plan found with cost: 2.4
+Human Actions:
+24. HUMAN_ACTION(ON C D)
+12. HUMAN_ACTION(ON A B)
+6. HUMAN_ACTION(ON B C)
+index of action to remove ("-1" to continue): 
+Actions
+Action HUMAN_ACTION(CLEAR A)
+	Pre(a) = {}
+	Add(a) = {(CLEAR A)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(CLEAR A)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(CLEAR A)}
+	eDel(a) = {(CLEAR A)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON-TABLE B)
+	Pre(a) = {}
+	Add(a) = {(ON-TABLE B)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON-TABLE B)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON-TABLE B)}
+	eDel(a) = {(ON-TABLE B)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON B B)
+	Pre(a) = {}
+	Add(a) = {(ON B B)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON B B)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON B B)}
+	eDel(a) = {(ON B B)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON B C)
+	Pre(a) = {}
+	Add(a) = {(ON B C)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON B C)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON B C)}
+	eDel(a) = {(ON B C)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON B D)
+	Pre(a) = {}
+	Add(a) = {(ON B D)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON B D)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON B D)}
+	eDel(a) = {(ON B D)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON A A)
+	Pre(a) = {}
+	Add(a) = {(ON A A)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON A A)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON A A)}
+	eDel(a) = {(ON A A)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON A B)
+	Pre(a) = {}
+	Add(a) = {(ON A B)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON A B)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON A B)}
+	eDel(a) = {(ON A B)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON A C)
+	Pre(a) = {}
+	Add(a) = {(ON A C)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON A C)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON A C)}
+	eDel(a) = {(ON A C)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON A D)
+	Pre(a) = {}
+	Add(a) = {(ON A D)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON A D)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON A D)}
+	eDel(a) = {(ON A D)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON C A)
+	Pre(a) = {}
+	Add(a) = {(ON C A)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON C A)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON C A)}
+	eDel(a) = {(ON C A)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON C B)
+	Pre(a) = {}
+	Add(a) = {(ON C B)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON C B)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON C B)}
+	eDel(a) = {(ON C B)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON C C)
+	Pre(a) = {}
+	Add(a) = {(ON C C)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON C C)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON C C)}
+	eDel(a) = {(ON C C)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON C D)
+	Pre(a) = {}
+	Add(a) = {(ON C D)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = inf
+Action HUMAN_ACTION_NEG(ON C D)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON C D)}
+	eDel(a) = {(ON C D)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON D A)
+	Pre(a) = {}
+	Add(a) = {(ON D A)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON D A)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON D A)}
+	eDel(a) = {(ON D A)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON D B)
+	Pre(a) = {}
+	Add(a) = {(ON D B)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON D B)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON D B)}
+	eDel(a) = {(ON D B)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON D C)
+	Pre(a) = {}
+	Add(a) = {(ON D C)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON D C)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON D C)}
+	eDel(a) = {(ON D C)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON D D)
+	Pre(a) = {}
+	Add(a) = {(ON D D)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON D D)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON D D)}
+	eDel(a) = {(ON D D)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(CLEAR D)
+	Pre(a) = {}
+	Add(a) = {(CLEAR D)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(CLEAR D)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(CLEAR D)}
+	eDel(a) = {(CLEAR D)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(CLEAR C)
+	Pre(a) = {}
+	Add(a) = {(CLEAR C)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(CLEAR C)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(CLEAR C)}
+	eDel(a) = {(CLEAR C)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(CLEAR B)
+	Pre(a) = {}
+	Add(a) = {(CLEAR B)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(CLEAR B)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(CLEAR B)}
+	eDel(a) = {(CLEAR B)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON-TABLE D)
+	Pre(a) = {}
+	Add(a) = {(ON-TABLE D)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON-TABLE D)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON-TABLE D)}
+	eDel(a) = {(ON-TABLE D)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON-TABLE C)
+	Pre(a) = {}
+	Add(a) = {(ON-TABLE C)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON-TABLE C)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON-TABLE C)}
+	eDel(a) = {(ON-TABLE C)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON-TABLE A)
+	Pre(a) = {}
+	Add(a) = {(ON-TABLE A)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON-TABLE A)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON-TABLE A)}
+	eDel(a) = {(ON-TABLE A)}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION(ON B A)
+	Pre(a) = {}
+	Add(a) = {(ON B A)}
+	Del(a) = {}
+	Conditional Effects:
+Cost = 0.8
+Action HUMAN_ACTION_NEG(ON B A)
+	Pre(a) = {}
+	Add(a) = {}
+	Del(a) = {(ON B A)}
+	eDel(a) = {(ON B A)}
+	Conditional Effects:
+Cost = 0.8
+Action (MOVETOBLOCK1 D D C)
+	Pre(a) = {(ON D D), (CLEAR C), (CLEAR D)}
+	Add(a) = {(ON D C)}
+	Del(a) = {(CLEAR C), (ON D D)}
+	eDel(a) = {(CLEAR C), (ON D D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D D B)
+	Pre(a) = {(ON D D), (CLEAR B), (CLEAR D)}
+	Add(a) = {(ON D B)}
+	Del(a) = {(CLEAR B), (ON D D)}
+	eDel(a) = {(CLEAR B), (ON D D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D D A)
+	Pre(a) = {(ON D D), (CLEAR A), (CLEAR D)}
+	Add(a) = {(ON D A)}
+	Del(a) = {(CLEAR A), (ON D D)}
+	eDel(a) = {(CLEAR A), (ON D D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D C D)
+	Pre(a) = {(ON D C), (CLEAR D)}
+	Add(a) = {(CLEAR C), (ON D D)}
+	Del(a) = {(CLEAR D), (ON D C)}
+	eDel(a) = {(CLEAR D), (ON D C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D C B)
+	Pre(a) = {(ON D C), (CLEAR B), (CLEAR D)}
+	Add(a) = {(CLEAR C), (ON D B)}
+	Del(a) = {(CLEAR B), (ON D C)}
+	eDel(a) = {(CLEAR B), (ON D C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D C A)
+	Pre(a) = {(ON D C), (CLEAR A), (CLEAR D)}
+	Add(a) = {(CLEAR C), (ON D A)}
+	Del(a) = {(CLEAR A), (ON D C)}
+	eDel(a) = {(CLEAR A), (ON D C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D B D)
+	Pre(a) = {(ON D B), (CLEAR D)}
+	Add(a) = {(CLEAR B), (ON D D)}
+	Del(a) = {(CLEAR D), (ON D B)}
+	eDel(a) = {(CLEAR D), (ON D B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D B C)
+	Pre(a) = {(ON D B), (CLEAR C), (CLEAR D)}
+	Add(a) = {(CLEAR B), (ON D C)}
+	Del(a) = {(CLEAR C), (ON D B)}
+	eDel(a) = {(CLEAR C), (ON D B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D B A)
+	Pre(a) = {(ON D B), (CLEAR A), (CLEAR D)}
+	Add(a) = {(CLEAR B), (ON D A)}
+	Del(a) = {(CLEAR A), (ON D B)}
+	eDel(a) = {(CLEAR A), (ON D B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D A D)
+	Pre(a) = {(ON D A), (CLEAR D)}
+	Add(a) = {(CLEAR A), (ON D D)}
+	Del(a) = {(CLEAR D), (ON D A)}
+	eDel(a) = {(CLEAR D), (ON D A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D A C)
+	Pre(a) = {(ON D A), (CLEAR C), (CLEAR D)}
+	Add(a) = {(CLEAR A), (ON D C)}
+	Del(a) = {(CLEAR C), (ON D A)}
+	eDel(a) = {(CLEAR C), (ON D A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 D A B)
+	Pre(a) = {(ON D A), (CLEAR B), (CLEAR D)}
+	Add(a) = {(CLEAR A), (ON D B)}
+	Del(a) = {(CLEAR B), (ON D A)}
+	eDel(a) = {(CLEAR B), (ON D A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C D C)
+	Pre(a) = {(ON C D), (CLEAR C)}
+	Add(a) = {(CLEAR D), (ON C C)}
+	Del(a) = {(CLEAR C), (ON C D)}
+	eDel(a) = {(CLEAR C), (ON C D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C D B)
+	Pre(a) = {(ON C D), (CLEAR B), (CLEAR C)}
+	Add(a) = {(CLEAR D), (ON C B)}
+	Del(a) = {(CLEAR B), (ON C D)}
+	eDel(a) = {(CLEAR B), (ON C D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C D A)
+	Pre(a) = {(ON C D), (CLEAR A), (CLEAR C)}
+	Add(a) = {(CLEAR D), (ON C A)}
+	Del(a) = {(CLEAR A), (ON C D)}
+	eDel(a) = {(CLEAR A), (ON C D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C C D)
+	Pre(a) = {(ON C C), (CLEAR D), (CLEAR C)}
+	Add(a) = {(ON C D)}
+	Del(a) = {(CLEAR D), (ON C C)}
+	eDel(a) = {(CLEAR D), (ON C C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C C B)
+	Pre(a) = {(ON C C), (CLEAR B), (CLEAR C)}
+	Add(a) = {(ON C B)}
+	Del(a) = {(CLEAR B), (ON C C)}
+	eDel(a) = {(CLEAR B), (ON C C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C C A)
+	Pre(a) = {(ON C C), (CLEAR A), (CLEAR C)}
+	Add(a) = {(ON C A)}
+	Del(a) = {(CLEAR A), (ON C C)}
+	eDel(a) = {(CLEAR A), (ON C C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C B D)
+	Pre(a) = {(ON C B), (CLEAR D), (CLEAR C)}
+	Add(a) = {(CLEAR B), (ON C D)}
+	Del(a) = {(CLEAR D), (ON C B)}
+	eDel(a) = {(CLEAR D), (ON C B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C B C)
+	Pre(a) = {(ON C B), (CLEAR C)}
+	Add(a) = {(CLEAR B), (ON C C)}
+	Del(a) = {(CLEAR C), (ON C B)}
+	eDel(a) = {(CLEAR C), (ON C B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C B A)
+	Pre(a) = {(ON C B), (CLEAR A), (CLEAR C)}
+	Add(a) = {(CLEAR B), (ON C A)}
+	Del(a) = {(CLEAR A), (ON C B)}
+	eDel(a) = {(CLEAR A), (ON C B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C A D)
+	Pre(a) = {(ON C A), (CLEAR D), (CLEAR C)}
+	Add(a) = {(CLEAR A), (ON C D)}
+	Del(a) = {(CLEAR D), (ON C A)}
+	eDel(a) = {(CLEAR D), (ON C A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C A C)
+	Pre(a) = {(ON C A), (CLEAR C)}
+	Add(a) = {(CLEAR A), (ON C C)}
+	Del(a) = {(CLEAR C), (ON C A)}
+	eDel(a) = {(CLEAR C), (ON C A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 C A B)
+	Pre(a) = {(ON C A), (CLEAR B), (CLEAR C)}
+	Add(a) = {(CLEAR A), (ON C B)}
+	Del(a) = {(CLEAR B), (ON C A)}
+	eDel(a) = {(CLEAR B), (ON C A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A D C)
+	Pre(a) = {(ON A D), (CLEAR C), (CLEAR A)}
+	Add(a) = {(CLEAR D), (ON A C)}
+	Del(a) = {(CLEAR C), (ON A D)}
+	eDel(a) = {(CLEAR C), (ON A D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A D B)
+	Pre(a) = {(ON A D), (CLEAR B), (CLEAR A)}
+	Add(a) = {(CLEAR D), (ON A B)}
+	Del(a) = {(CLEAR B), (ON A D)}
+	eDel(a) = {(CLEAR B), (ON A D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A D A)
+	Pre(a) = {(ON A D), (CLEAR A)}
+	Add(a) = {(CLEAR D), (ON A A)}
+	Del(a) = {(CLEAR A), (ON A D)}
+	eDel(a) = {(CLEAR A), (ON A D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A C D)
+	Pre(a) = {(ON A C), (CLEAR D), (CLEAR A)}
+	Add(a) = {(CLEAR C), (ON A D)}
+	Del(a) = {(CLEAR D), (ON A C)}
+	eDel(a) = {(CLEAR D), (ON A C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A C B)
+	Pre(a) = {(ON A C), (CLEAR B), (CLEAR A)}
+	Add(a) = {(CLEAR C), (ON A B)}
+	Del(a) = {(CLEAR B), (ON A C)}
+	eDel(a) = {(CLEAR B), (ON A C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A C A)
+	Pre(a) = {(ON A C), (CLEAR A)}
+	Add(a) = {(CLEAR C), (ON A A)}
+	Del(a) = {(CLEAR A), (ON A C)}
+	eDel(a) = {(CLEAR A), (ON A C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A B D)
+	Pre(a) = {(ON A B), (CLEAR D), (CLEAR A)}
+	Add(a) = {(CLEAR B), (ON A D)}
+	Del(a) = {(CLEAR D), (ON A B)}
+	eDel(a) = {(CLEAR D), (ON A B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A B C)
+	Pre(a) = {(ON A B), (CLEAR C), (CLEAR A)}
+	Add(a) = {(CLEAR B), (ON A C)}
+	Del(a) = {(CLEAR C), (ON A B)}
+	eDel(a) = {(CLEAR C), (ON A B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A B A)
+	Pre(a) = {(ON A B), (CLEAR A)}
+	Add(a) = {(CLEAR B), (ON A A)}
+	Del(a) = {(CLEAR A), (ON A B)}
+	eDel(a) = {(CLEAR A), (ON A B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A A D)
+	Pre(a) = {(ON A A), (CLEAR D), (CLEAR A)}
+	Add(a) = {(ON A D)}
+	Del(a) = {(CLEAR D), (ON A A)}
+	eDel(a) = {(CLEAR D), (ON A A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A A C)
+	Pre(a) = {(ON A A), (CLEAR C), (CLEAR A)}
+	Add(a) = {(ON A C)}
+	Del(a) = {(CLEAR C), (ON A A)}
+	eDel(a) = {(CLEAR C), (ON A A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 A A B)
+	Pre(a) = {(ON A A), (CLEAR B), (CLEAR A)}
+	Add(a) = {(ON A B)}
+	Del(a) = {(CLEAR B), (ON A A)}
+	eDel(a) = {(CLEAR B), (ON A A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE D D)
+	Pre(a) = {(ON D D), (CLEAR D)}
+	Add(a) = {(ON-TABLE D)}
+	Del(a) = {(ON D D)}
+	eDel(a) = {(ON D D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE D C)
+	Pre(a) = {(ON D C), (CLEAR D)}
+	Add(a) = {(CLEAR C), (ON-TABLE D)}
+	Del(a) = {(ON D C)}
+	eDel(a) = {(ON D C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE D B)
+	Pre(a) = {(ON D B), (CLEAR D)}
+	Add(a) = {(CLEAR B), (ON-TABLE D)}
+	Del(a) = {(ON D B)}
+	eDel(a) = {(ON D B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE D A)
+	Pre(a) = {(ON D A), (CLEAR D)}
+	Add(a) = {(CLEAR A), (ON-TABLE D)}
+	Del(a) = {(ON D A)}
+	eDel(a) = {(ON D A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE C D)
+	Pre(a) = {(ON C D), (CLEAR C)}
+	Add(a) = {(CLEAR D), (ON-TABLE C)}
+	Del(a) = {(ON C D)}
+	eDel(a) = {(ON C D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE C C)
+	Pre(a) = {(ON C C), (CLEAR C)}
+	Add(a) = {(ON-TABLE C)}
+	Del(a) = {(ON C C)}
+	eDel(a) = {(ON C C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE C B)
+	Pre(a) = {(ON C B), (CLEAR C)}
+	Add(a) = {(CLEAR B), (ON-TABLE C)}
+	Del(a) = {(ON C B)}
+	eDel(a) = {(ON C B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE C A)
+	Pre(a) = {(ON C A), (CLEAR C)}
+	Add(a) = {(CLEAR A), (ON-TABLE C)}
+	Del(a) = {(ON C A)}
+	eDel(a) = {(ON C A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE B D)
+	Pre(a) = {(ON B D), (CLEAR B)}
+	Add(a) = {(CLEAR D), (ON-TABLE B)}
+	Del(a) = {(ON B D)}
+	eDel(a) = {(ON B D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE B C)
+	Pre(a) = {(ON B C), (CLEAR B)}
+	Add(a) = {(CLEAR C), (ON-TABLE B)}
+	Del(a) = {(ON B C)}
+	eDel(a) = {(ON B C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE B B)
+	Pre(a) = {(ON B B), (CLEAR B)}
+	Add(a) = {(ON-TABLE B)}
+	Del(a) = {(ON B B)}
+	eDel(a) = {(ON B B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE A D)
+	Pre(a) = {(ON A D), (CLEAR A)}
+	Add(a) = {(CLEAR D), (ON-TABLE A)}
+	Del(a) = {(ON A D)}
+	eDel(a) = {(ON A D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE A C)
+	Pre(a) = {(ON A C), (CLEAR A)}
+	Add(a) = {(CLEAR C), (ON-TABLE A)}
+	Del(a) = {(ON A C)}
+	eDel(a) = {(ON A C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE A B)
+	Pre(a) = {(ON A B), (CLEAR A)}
+	Add(a) = {(CLEAR B), (ON-TABLE A)}
+	Del(a) = {(ON A B)}
+	eDel(a) = {(ON A B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE A A)
+	Pre(a) = {(ON A A), (CLEAR A)}
+	Add(a) = {(ON-TABLE A)}
+	Del(a) = {(ON A A)}
+	eDel(a) = {(ON A A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 D D)
+	Pre(a) = {(ON-TABLE D), (CLEAR D)}
+	Add(a) = {(ON D D)}
+	Del(a) = {(CLEAR D), (ON-TABLE D)}
+	eDel(a) = {(CLEAR D), (ON-TABLE D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 D C)
+	Pre(a) = {(ON-TABLE D), (CLEAR C), (CLEAR D)}
+	Add(a) = {(ON D C)}
+	Del(a) = {(CLEAR C), (ON-TABLE D)}
+	eDel(a) = {(CLEAR C), (ON-TABLE D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 D B)
+	Pre(a) = {(ON-TABLE D), (CLEAR B), (CLEAR D)}
+	Add(a) = {(ON D B)}
+	Del(a) = {(CLEAR B), (ON-TABLE D)}
+	eDel(a) = {(CLEAR B), (ON-TABLE D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 D A)
+	Pre(a) = {(ON-TABLE D), (CLEAR A), (CLEAR D)}
+	Add(a) = {(ON D A)}
+	Del(a) = {(CLEAR A), (ON-TABLE D)}
+	eDel(a) = {(CLEAR A), (ON-TABLE D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 C D)
+	Pre(a) = {(ON-TABLE C), (CLEAR D), (CLEAR C)}
+	Add(a) = {(ON C D)}
+	Del(a) = {(CLEAR D), (ON-TABLE C)}
+	eDel(a) = {(CLEAR D), (ON-TABLE C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 C C)
+	Pre(a) = {(ON-TABLE C), (CLEAR C)}
+	Add(a) = {(ON C C)}
+	Del(a) = {(CLEAR C), (ON-TABLE C)}
+	eDel(a) = {(CLEAR C), (ON-TABLE C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 C B)
+	Pre(a) = {(ON-TABLE C), (CLEAR B), (CLEAR C)}
+	Add(a) = {(ON C B)}
+	Del(a) = {(CLEAR B), (ON-TABLE C)}
+	eDel(a) = {(CLEAR B), (ON-TABLE C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 C A)
+	Pre(a) = {(ON-TABLE C), (CLEAR A), (CLEAR C)}
+	Add(a) = {(ON C A)}
+	Del(a) = {(CLEAR A), (ON-TABLE C)}
+	eDel(a) = {(CLEAR A), (ON-TABLE C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 B D)
+	Pre(a) = {(ON-TABLE B), (CLEAR D), (CLEAR B)}
+	Add(a) = {(ON B D)}
+	Del(a) = {(CLEAR D), (ON-TABLE B)}
+	eDel(a) = {(CLEAR D), (ON-TABLE B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 B C)
+	Pre(a) = {(ON-TABLE B), (CLEAR C), (CLEAR B)}
+	Add(a) = {(ON B C)}
+	Del(a) = {(CLEAR C), (ON-TABLE B)}
+	eDel(a) = {(CLEAR C), (ON-TABLE B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 B B)
+	Pre(a) = {(ON-TABLE B), (CLEAR B)}
+	Add(a) = {(ON B B)}
+	Del(a) = {(CLEAR B), (ON-TABLE B)}
+	eDel(a) = {(CLEAR B), (ON-TABLE B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 B A)
+	Pre(a) = {(ON-TABLE B), (CLEAR A), (CLEAR B)}
+	Add(a) = {(ON B A)}
+	Del(a) = {(CLEAR A), (ON-TABLE B)}
+	eDel(a) = {(CLEAR A), (ON-TABLE B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 A D)
+	Pre(a) = {(ON-TABLE A), (CLEAR D), (CLEAR A)}
+	Add(a) = {(ON A D)}
+	Del(a) = {(CLEAR D), (ON-TABLE A)}
+	eDel(a) = {(CLEAR D), (ON-TABLE A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 A C)
+	Pre(a) = {(ON-TABLE A), (CLEAR C), (CLEAR A)}
+	Add(a) = {(ON A C)}
+	Del(a) = {(CLEAR C), (ON-TABLE A)}
+	eDel(a) = {(CLEAR C), (ON-TABLE A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 A B)
+	Pre(a) = {(ON-TABLE A), (CLEAR B), (CLEAR A)}
+	Add(a) = {(ON A B)}
+	Del(a) = {(CLEAR B), (ON-TABLE A)}
+	eDel(a) = {(CLEAR B), (ON-TABLE A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK2 A A)
+	Pre(a) = {(ON-TABLE A), (CLEAR A)}
+	Add(a) = {(ON A A)}
+	Del(a) = {(CLEAR A), (ON-TABLE A)}
+	eDel(a) = {(CLEAR A), (ON-TABLE A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B D C)
+	Pre(a) = {(ON B D), (CLEAR C), (CLEAR B)}
+	Add(a) = {(CLEAR D), (ON B C)}
+	Del(a) = {(CLEAR C), (ON B D)}
+	eDel(a) = {(CLEAR C), (ON B D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B D B)
+	Pre(a) = {(ON B D), (CLEAR B)}
+	Add(a) = {(CLEAR D), (ON B B)}
+	Del(a) = {(CLEAR B), (ON B D)}
+	eDel(a) = {(CLEAR B), (ON B D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B D A)
+	Pre(a) = {(ON B D), (CLEAR A), (CLEAR B)}
+	Add(a) = {(CLEAR D), (ON B A)}
+	Del(a) = {(CLEAR A), (ON B D)}
+	eDel(a) = {(CLEAR A), (ON B D)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B C D)
+	Pre(a) = {(ON B C), (CLEAR D), (CLEAR B)}
+	Add(a) = {(CLEAR C), (ON B D)}
+	Del(a) = {(CLEAR D), (ON B C)}
+	eDel(a) = {(CLEAR D), (ON B C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B C B)
+	Pre(a) = {(ON B C), (CLEAR B)}
+	Add(a) = {(CLEAR C), (ON B B)}
+	Del(a) = {(CLEAR B), (ON B C)}
+	eDel(a) = {(CLEAR B), (ON B C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B C A)
+	Pre(a) = {(ON B C), (CLEAR A), (CLEAR B)}
+	Add(a) = {(CLEAR C), (ON B A)}
+	Del(a) = {(CLEAR A), (ON B C)}
+	eDel(a) = {(CLEAR A), (ON B C)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B B D)
+	Pre(a) = {(ON B B), (CLEAR D), (CLEAR B)}
+	Add(a) = {(ON B D)}
+	Del(a) = {(CLEAR D), (ON B B)}
+	eDel(a) = {(CLEAR D), (ON B B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B B C)
+	Pre(a) = {(ON B B), (CLEAR C), (CLEAR B)}
+	Add(a) = {(ON B C)}
+	Del(a) = {(CLEAR C), (ON B B)}
+	eDel(a) = {(CLEAR C), (ON B B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B B A)
+	Pre(a) = {(ON B B), (CLEAR A), (CLEAR B)}
+	Add(a) = {(ON B A)}
+	Del(a) = {(CLEAR A), (ON B B)}
+	eDel(a) = {(CLEAR A), (ON B B)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B A D)
+	Pre(a) = {(ON B A), (CLEAR D), (CLEAR B)}
+	Add(a) = {(CLEAR A), (ON B D)}
+	Del(a) = {(CLEAR D), (ON B A)}
+	eDel(a) = {(CLEAR D), (ON B A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B A C)
+	Pre(a) = {(ON B A), (CLEAR C), (CLEAR B)}
+	Add(a) = {(CLEAR A), (ON B C)}
+	Del(a) = {(CLEAR C), (ON B A)}
+	eDel(a) = {(CLEAR C), (ON B A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOBLOCK1 B A B)
+	Pre(a) = {(ON B A), (CLEAR B)}
+	Add(a) = {(CLEAR A), (ON B B)}
+	Del(a) = {(CLEAR B), (ON B A)}
+	eDel(a) = {(CLEAR B), (ON B A)}
+	Conditional Effects:
+Cost = 1
+Action (MOVETOTABLE B A)
+	Pre(a) = {(ON B A), (CLEAR B)}
+	Add(a) = {(CLEAR A), (ON-TABLE B)}
+	Del(a) = {(ON B A)}
+	eDel(a) = {(ON B A)}
+	Conditional Effects:
+Cost = 1
+index of action to remove ("-1" to continue): 
+ --- OK.
+ Match tree built with 80 nodes.
+
+
+ Match tree built with 128 nodes.
+
+Search starts: 
+	 Bound: inf
+	 Best h(n) = 0.8, expanded: 0, generated: 1
+Total time: 0.068
+Nodes generated during search: 3935
+Nodes expanded during search: 226
+Nodes pruned by bound: 0
+Dead-end nodes: 0
+Plan found with cost: 2.4
+Human Actions:
+24. HUMAN_ACTION(ON C D)
+12. HUMAN_ACTION(ON A B)
+6. HUMAN_ACTION(ON B C)
+index of action to remove ("-1" to continue): 
+index of action to remove ("-1" to continue): 

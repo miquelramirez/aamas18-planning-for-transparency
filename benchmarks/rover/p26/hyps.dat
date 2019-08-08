@@ -1,0 +1,5 @@
+(communicated_soil_data waypoint0),(communicated_soil_data waypoint1)
+(communicated_rock_data waypoint2),(communicated_soil_data waypoint2)
+(communicated_rock_data waypoint1),(communicated_rock_data waypoint0)
+(communicated_image_data objective0 colour),(communicated_image_data objective1 high_res)
+(communicated_image_data objective0 colour)

@@ -1,0 +1,207 @@
+
+#include <iostream>
+#include <fstream>
+#include <map>
+#include <ctype.h>
+
+#include <strips_prob.hxx>
+#include <ff_to_aptk.hxx>
+#include <fluent.hxx>
+#include <action.hxx>
+#include <cond_eff.hxx>
+#include <strips_state.hxx>
+#include <fwd_search_prob.hxx>
+#include "h_rp.hxx"
+
+#include <boost/program_options.hpp>
+
+#include <aptk/open_list.hxx>
+#include <aptk/string_conversions.hxx>
+#include <aptk/at_bfs_recog.hxx>
+
+namespace po = boost::program_options;
+
+using	aptk::STRIPS_Problem;
+using	aptk::Action;
+using	aptk::agnostic::Fwd_Search_Problem;
+
+using aptk::agnostic::Plan_Recognition_Heuristic;
+
+using aptk::search::Open_List;
+using	aptk::search::rbfs::AT_BFS_SQ_SH;
+using	aptk::search::Node_Comparer;
+
+typedef	aptk::search::rbfs::Node< aptk::State >	Search_Node;
+typedef	Node_Comparer< Search_Node >	Tie_Breaking_Algorithm;
+typedef	Open_List< Tie_Breaking_Algorithm, Search_Node >	BFS_Open_List;
+
+typedef Plan_Recognition_Heuristic<Fwd_Search_Problem, false, false>	H_PR;
+typedef Plan_Recognition_Heuristic<Fwd_Search_Problem, false, true>	H_A_PR;
+typedef Plan_Recognition_Heuristic<Fwd_Search_Problem, true, false>	H_BU_PR;
+typedef Plan_Recognition_Heuristic<Fwd_Search_Problem, true, true>	H_A_BU_PR;
+typedef	AT_BFS_SQ_SH< Fwd_Search_Problem, H_PR, BFS_Open_List >		BFS_H_PR_Fwd;
+typedef	AT_BFS_SQ_SH< Fwd_Search_Problem, H_A_PR, BFS_Open_List >		BFS_H_A_PR_Fwd;
+typedef	AT_BFS_SQ_SH< Fwd_Search_Problem, H_BU_PR, BFS_Open_List >		BFS_H_BU_PR_Fwd;
+typedef	AT_BFS_SQ_SH< Fwd_Search_Problem, H_A_BU_PR, BFS_Open_List >		BFS_H_A_BU_PR_Fwd;
+
+void print_action_plan_to_cout(std::vector< aptk::Action_Idx >& plan, Fwd_Search_Problem& search_prob){
+  for ( unsigned k = 0; k < plan.size(); k++ ) {
+    const aptk::Action& a = *(search_prob.task().actions()[ plan[k] ]);
+    std::cout << a.index() << ": " << a.signature() << std::endl;
+  }
+}
+
+// Process the goal candidate set file
+std::vector<unsigned int> process_goal_set_line(std::string s, aptk::STRIPS_Problem& prob){
+  std::string delimiter = ",";
+	size_t pos = 0;
+	std::string token;
+  std::vector<unsigned int> goal_vector;
+  aptk::Fluent_Ptr_Vec fs = prob.fluents();
+
+	while ((pos = s.find(delimiter)) != std::string::npos) {
+			token = s.substr(0, pos);
+
+      //std::cout << token;
+      //std::transform(token.begin(), token.end(), token.begin(), toupper);
+      //std::cout << token << std::endl;
+			for (unsigned int i = 0 ; i < fs.size(); i++){
+        //std::cout << "fs" << i << ": " << fs[i]->signature() << " token = " << token << std::endl;
+        if (fs[i]->signature() == token){
+          goal_vector.push_back(fs[i]->index());
+        }
+      }
+
+			s.erase(0, pos + delimiter.length());
+	}
+
+  for (unsigned int i = 0 ; i < fs.size(); i++){
+    if (fs[i]->signature() == s){
+      //std::cout << fs[i]->signature() << ", ";
+      goal_vector.push_back(fs[i]->index());
+    }
+  }
+
+  //std::cout << std::endl;
+
+  return goal_vector;
+}
+
+// Parses each line of the goal candidate set file
+std::vector<aptk::Fluent_Vec> goal_set_parsing(std::string goal_set_file_name, aptk::STRIPS_Problem& prob){
+  std::string line;
+  std::ifstream goal_set_file(goal_set_file_name);
+	std::vector<aptk::Fluent_Vec> goal_set;
+	//unsigned int ln_n = 0;
+
+  //std::cout << "Goal-Set: " << std::endl;
+
+  if(goal_set_file.is_open())
+    while (std::getline(goal_set_file,line)){
+      //std::cout << ln_n++ << ": " << std::endl;
+      std::vector<unsigned int> goal = process_goal_set_line(line, prob);
+      goal_set.push_back(goal);
+    }
+  else
+    std::cout << "Unable to open Goal-Set file!" << std::endl;
+
+  //std::cout << std::endl;
+
+  return goal_set;
+
+}
+
+void process_command_line_options( int ac, char** av, po::variables_map& vars ) {
+	po::options_description desc( "Options:" );
+
+	desc.add_options()
+		( "help", "Show help message" )
+		( "domain", po::value<std::string>(), "Input PDDL domain description" )
+		( "problem", po::value<std::string>(), "Input PDDL problem description" )
+		( "goalset", po::value<std::string>(), "Input PDDL goal-set description" )
+		( "approx", po::value<bool>()->default_value(false), "Use approximate plan recognition" )
+		( "condin", po::value<bool>()->default_value(false), "Use assumption of conditional independence of observations" )
+		( "greedy", po::value<bool>()->default_value(false), "Use greedy best first search" )
+		( "beta", po::value<int>()->default_value(1), "Beta" )
+	;
+
+	try {
+		po::store( po::parse_command_line( ac, av, desc ), vars );
+		po::notify( vars );
+	}
+	catch ( std::exception& e ) {
+		std::cerr << "Error: " << e.what() << std::endl;
+		std::exit(1);
+	}
+	catch ( ... ) {
+		std::cerr << "Exception of unknown type!" << std::endl;
+		std::exit(1);
+	}
+
+	if ( vars.count("help") ) {
+		std::cout << desc << std::endl;
+		std::exit(0);
+	}
+}
+
+int main( int argc, char** argv){
+
+	po::variables_map vm;
+	process_command_line_options( argc, argv, vm );
+
+	if ( !vm.count( "domain" ) ) {
+		std::cerr << "No PDDL domain was specified!" << std::endl;
+		std::exit(1);
+	}
+
+	if ( !vm.count( "problem" ) ) {
+		std::cerr << "No PDDL problem was specified!" << std::endl;
+		std::exit(1);
+	}
+
+	if ( !vm.count( "goalset" ) ) {
+		std::cerr << "No Goal Set file was specified!" << std::endl;
+		std::exit(1);
+	}
+
+  std::string goal_set_name = vm["goalset"].as<std::string>();
+  int beta = vm["beta"].as<int>();
+  bool approx = vm["approx"].as<bool>();
+  bool condin= vm["condin"].as<bool>();
+  bool greedy= vm["greedy"].as<bool>();
+
+	aptk::STRIPS_Problem	prob;
+	aptk::FF_Parser::get_problem_description( vm["domain"].as<std::string>(), vm["problem"].as<std::string>(), prob );
+	std::vector<aptk::Fluent_Vec> goal_set = goal_set_parsing(goal_set_name, prob);
+
+	std::vector<unsigned> observations;
+	observations.push_back(30);
+	observations.push_back(24);
+
+  prob.set_goal_set(goal_set);
+
+  std::vector<double> priors;
+  // Sets the priors to be uniform (//TODO put these in the goal candidate set file)
+  for (unsigned int i = 0; i < goal_set.size(); i++){
+    priors.push_back(0.5);
+  }
+  priors = normalize_vector(priors);
+  prob.set_priors(priors);
+  prob.set_beta(beta);
+
+  float cost = 0;
+  std::vector<double> prob_vector;
+
+  // Before using this ensure that the cost function is the same in both h_rp.hxx and the simulate_plan_for_recog function in planrec.cxx.
+  std::vector<double> exact_probabilities = plan_recognition(prob, goal_set, priors, observations, prob.init(), beta);
+
+  std::cout << std::endl << "Exact Cost to Recognizability:" << std::endl;
+  print_vector(exact_probabilities);
+
+  double sum_of_elems = 0.0f;
+
+  for (double n : exact_probabilities)
+    sum_of_elems += n;
+  std::cout << "Total Cost: " << sum_of_elems << std::endl;
+
+}

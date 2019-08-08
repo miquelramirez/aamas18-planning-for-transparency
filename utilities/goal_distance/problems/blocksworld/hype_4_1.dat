@@ -1,0 +1,2 @@
+(CLEAR B),(ONTABLE H),(ON B A),(ON A S),(ON S H)
+(CLEAR H),(ONTABLE S),(ON H A),(ON A B),(ON B S)

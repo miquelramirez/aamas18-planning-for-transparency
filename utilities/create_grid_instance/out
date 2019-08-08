@@ -1,0 +1,1357 @@
+ --- OK.
+ Match tree built with 1520 nodes.
+
+Make goal set:
+Add a goal to goal set (1/0)?
+Select goal:
+1. (POS P21)
+2. (POS P2)
+3. (POS P41)
+4. (POS P22)
+5. (POS P3)
+6. (POS P61)
+7. (POS P42)
+8. (POS P23)
+9. (POS P4)
+10. (POS P81)
+11. (POS P62)
+12. (POS P43)
+13. (POS P24)
+14. (POS P5)
+15. (POS P101)
+16. (POS P82)
+17. (POS P63)
+18. (POS P44)
+19. (POS P25)
+20. (POS P6)
+21. (POS P121)
+22. (POS P102)
+23. (POS P83)
+24. (POS P64)
+25. (POS P45)
+26. (POS P26)
+27. (POS P7)
+28. (POS P141)
+29. (POS P122)
+30. (POS P103)
+31. (POS P84)
+32. (POS P65)
+33. (POS P46)
+34. (POS P27)
+35. (POS P8)
+36. (POS P161)
+37. (POS P142)
+38. (POS P123)
+39. (POS P104)
+40. (POS P85)
+41. (POS P66)
+42. (POS P47)
+43. (POS P28)
+44. (POS P9)
+45. (POS P181)
+46. (POS P162)
+47. (POS P143)
+48. (POS P124)
+49. (POS P105)
+50. (POS P86)
+51. (POS P67)
+52. (POS P48)
+53. (POS P29)
+54. (POS P10)
+55. (POS P201)
+56. (POS P182)
+57. (POS P163)
+58. (POS P144)
+59. (POS P125)
+60. (POS P106)
+61. (POS P87)
+62. (POS P68)
+63. (POS P49)
+64. (POS P30)
+65. (POS P11)
+66. (POS P221)
+67. (POS P202)
+68. (POS P183)
+69. (POS P164)
+70. (POS P145)
+71. (POS P126)
+72. (POS P107)
+73. (POS P88)
+74. (POS P69)
+75. (POS P50)
+76. (POS P31)
+77. (POS P12)
+78. (POS P241)
+79. (POS P222)
+80. (POS P203)
+81. (POS P184)
+82. (POS P165)
+83. (POS P146)
+84. (POS P127)
+85. (POS P108)
+86. (POS P89)
+87. (POS P70)
+88. (POS P51)
+89. (POS P32)
+90. (POS P13)
+91. (POS P261)
+92. (POS P242)
+93. (POS P223)
+94. (POS P204)
+95. (POS P185)
+96. (POS P166)
+97. (POS P147)
+98. (POS P128)
+99. (POS P109)
+100. (POS P90)
+101. (POS P71)
+102. (POS P52)
+103. (POS P33)
+104. (POS P14)
+105. (POS P281)
+106. (POS P262)
+107. (POS P243)
+108. (POS P224)
+109. (POS P205)
+110. (POS P186)
+111. (POS P167)
+112. (POS P148)
+113. (POS P129)
+114. (POS P110)
+115. (POS P91)
+116. (POS P72)
+117. (POS P53)
+118. (POS P34)
+119. (POS P15)
+120. (POS P301)
+121. (POS P282)
+122. (POS P263)
+123. (POS P244)
+124. (POS P225)
+125. (POS P206)
+126. (POS P187)
+127. (POS P168)
+128. (POS P149)
+129. (POS P130)
+130. (POS P111)
+131. (POS P92)
+132. (POS P73)
+133. (POS P54)
+134. (POS P35)
+135. (POS P16)
+136. (POS P321)
+137. (POS P302)
+138. (POS P283)
+139. (POS P264)
+140. (POS P245)
+141. (POS P226)
+142. (POS P207)
+143. (POS P188)
+144. (POS P169)
+145. (POS P150)
+146. (POS P131)
+147. (POS P112)
+148. (POS P93)
+149. (POS P74)
+150. (POS P55)
+151. (POS P36)
+152. (POS P17)
+153. (POS P341)
+154. (POS P322)
+155. (POS P303)
+156. (POS P284)
+157. (POS P265)
+158. (POS P246)
+159. (POS P227)
+160. (POS P208)
+161. (POS P189)
+162. (POS P170)
+163. (POS P151)
+164. (POS P132)
+165. (POS P113)
+166. (POS P94)
+167. (POS P75)
+168. (POS P56)
+169. (POS P37)
+170. (POS P18)
+171. (POS P361)
+172. (POS P342)
+173. (POS P323)
+174. (POS P304)
+175. (POS P285)
+176. (POS P266)
+177. (POS P247)
+178. (POS P228)
+179. (POS P209)
+180. (POS P190)
+181. (POS P171)
+182. (POS P152)
+183. (POS P133)
+184. (POS P114)
+185. (POS P95)
+186. (POS P76)
+187. (POS P57)
+188. (POS P38)
+189. (POS P19)
+190. (POS P381)
+191. (POS P362)
+192. (POS P343)
+193. (POS P324)
+194. (POS P305)
+195. (POS P286)
+196. (POS P267)
+197. (POS P248)
+198. (POS P229)
+199. (POS P210)
+200. (POS P191)
+201. (POS P172)
+202. (POS P153)
+203. (POS P134)
+204. (POS P115)
+205. (POS P96)
+206. (POS P77)
+207. (POS P58)
+208. (POS P39)
+209. (POS P20)
+210. (POS P382)
+211. (POS P363)
+212. (POS P344)
+213. (POS P325)
+214. (POS P306)
+215. (POS P287)
+216. (POS P268)
+217. (POS P249)
+218. (POS P230)
+219. (POS P211)
+220. (POS P192)
+221. (POS P173)
+222. (POS P154)
+223. (POS P135)
+224. (POS P116)
+225. (POS P97)
+226. (POS P78)
+227. (POS P59)
+228. (POS P40)
+229. (POS P383)
+230. (POS P364)
+231. (POS P345)
+232. (POS P326)
+233. (POS P307)
+234. (POS P288)
+235. (POS P269)
+236. (POS P250)
+237. (POS P231)
+238. (POS P212)
+239. (POS P193)
+240. (POS P174)
+241. (POS P155)
+242. (POS P136)
+243. (POS P117)
+244. (POS P98)
+245. (POS P79)
+246. (POS P60)
+247. (POS P384)
+248. (POS P365)
+249. (POS P346)
+250. (POS P327)
+251. (POS P308)
+252. (POS P289)
+253. (POS P270)
+254. (POS P251)
+255. (POS P232)
+256. (POS P213)
+257. (POS P194)
+258. (POS P175)
+259. (POS P156)
+260. (POS P137)
+261. (POS P118)
+262. (POS P99)
+263. (POS P80)
+264. (POS P385)
+265. (POS P366)
+266. (POS P347)
+267. (POS P328)
+268. (POS P309)
+269. (POS P290)
+270. (POS P271)
+271. (POS P252)
+272. (POS P233)
+273. (POS P214)
+274. (POS P195)
+275. (POS P176)
+276. (POS P157)
+277. (POS P138)
+278. (POS P119)
+279. (POS P100)
+280. (POS P386)
+281. (POS P367)
+282. (POS P348)
+283. (POS P329)
+284. (POS P310)
+285. (POS P291)
+286. (POS P272)
+287. (POS P253)
+288. (POS P234)
+289. (POS P215)
+290. (POS P196)
+291. (POS P177)
+292. (POS P158)
+293. (POS P139)
+294. (POS P120)
+295. (POS P387)
+296. (POS P368)
+297. (POS P349)
+298. (POS P330)
+299. (POS P311)
+300. (POS P292)
+301. (POS P273)
+302. (POS P254)
+303. (POS P235)
+304. (POS P216)
+305. (POS P197)
+306. (POS P178)
+307. (POS P159)
+308. (POS P140)
+309. (POS P388)
+310. (POS P369)
+311. (POS P350)
+312. (POS P331)
+313. (POS P312)
+314. (POS P293)
+315. (POS P274)
+316. (POS P255)
+317. (POS P236)
+318. (POS P217)
+319. (POS P198)
+320. (POS P179)
+321. (POS P160)
+322. (POS P389)
+323. (POS P370)
+324. (POS P351)
+325. (POS P332)
+326. (POS P313)
+327. (POS P294)
+328. (POS P275)
+329. (POS P256)
+330. (POS P237)
+331. (POS P218)
+332. (POS P199)
+333. (POS P180)
+334. (POS P390)
+335. (POS P371)
+336. (POS P352)
+337. (POS P333)
+338. (POS P314)
+339. (POS P295)
+340. (POS P276)
+341. (POS P257)
+342. (POS P238)
+343. (POS P219)
+344. (POS P200)
+345. (POS P391)
+346. (POS P372)
+347. (POS P353)
+348. (POS P334)
+349. (POS P315)
+350. (POS P296)
+351. (POS P277)
+352. (POS P258)
+353. (POS P239)
+354. (POS P220)
+355. (POS P392)
+356. (POS P373)
+357. (POS P354)
+358. (POS P335)
+359. (POS P316)
+360. (POS P297)
+361. (POS P278)
+362. (POS P259)
+363. (POS P240)
+364. (POS P393)
+365. (POS P374)
+366. (POS P355)
+367. (POS P336)
+368. (POS P317)
+369. (POS P298)
+370. (POS P279)
+371. (POS P260)
+372. (POS P394)
+373. (POS P375)
+374. (POS P356)
+375. (POS P337)
+376. (POS P318)
+377. (POS P299)
+378. (POS P280)
+379. (POS P395)
+380. (POS P376)
+381. (POS P357)
+382. (POS P338)
+383. (POS P319)
+384. (POS P300)
+385. (POS P396)
+386. (POS P377)
+387. (POS P358)
+388. (POS P339)
+389. (POS P320)
+390. (POS P397)
+391. (POS P378)
+392. (POS P359)
+393. (POS P340)
+394. (POS P398)
+395. (POS P379)
+396. (POS P360)
+397. (POS P399)
+398. (POS P380)
+399. (POS P400)
+400. (POS P1)
+Index of fluent to add ("-1" to continue): 
+Index of fluent to add ("-1" to continue): 
+(POS P1)
+
+ Match tree built with 4562 nodes.
+
+(POS P2)
+
+ Match tree built with 4562 nodes.
+
+(POS P3)
+
+ Match tree built with 4562 nodes.
+
+(POS P4)
+
+ Match tree built with 4562 nodes.
+
+(POS P5)
+
+ Match tree built with 4562 nodes.
+
+(POS P6)
+
+ Match tree built with 4562 nodes.
+
+(POS P7)
+
+ Match tree built with 4562 nodes.
+
+(POS P8)
+
+ Match tree built with 4562 nodes.
+
+(POS P9)
+
+ Match tree built with 4562 nodes.
+
+(POS P10)
+
+ Match tree built with 4562 nodes.
+
+(POS P11)
+
+ Match tree built with 4562 nodes.
+
+(POS P12)
+
+ Match tree built with 4562 nodes.
+
+(POS P13)
+
+ Match tree built with 4562 nodes.
+
+(POS P14)
+
+ Match tree built with 4562 nodes.
+
+(POS P15)
+
+ Match tree built with 4562 nodes.
+
+(POS P16)
+
+ Match tree built with 4562 nodes.
+
+(POS P17)
+
+ Match tree built with 4562 nodes.
+
+(POS P18)
+
+ Match tree built with 4562 nodes.
+
+(POS P19)
+
+ Match tree built with 4562 nodes.
+
+(POS P20)
+
+ Match tree built with 4562 nodes.
+
+(POS P21)
+
+ Match tree built with 4562 nodes.
+
+(POS P22)
+
+ Match tree built with 4562 nodes.
+
+(POS P23)
+
+ Match tree built with 4562 nodes.
+
+(POS P24)
+
+ Match tree built with 4562 nodes.
+
+(POS P25)
+
+ Match tree built with 4562 nodes.
+
+(POS P26)
+
+ Match tree built with 4562 nodes.
+
+(POS P27)
+
+ Match tree built with 4562 nodes.
+
+(POS P28)
+
+ Match tree built with 4562 nodes.
+
+(POS P29)
+
+ Match tree built with 4562 nodes.
+
+(POS P30)
+
+ Match tree built with 4562 nodes.
+
+(POS P31)
+
+ Match tree built with 4562 nodes.
+
+(POS P32)
+
+ Match tree built with 4562 nodes.
+
+(POS P33)
+
+ Match tree built with 4562 nodes.
+
+(POS P34)
+
+ Match tree built with 4562 nodes.
+
+(POS P35)
+
+ Match tree built with 4562 nodes.
+
+(POS P36)
+
+ Match tree built with 4562 nodes.
+
+(POS P37)
+
+ Match tree built with 4562 nodes.
+
+(POS P38)
+
+ Match tree built with 4562 nodes.
+
+(POS P39)
+
+ Match tree built with 4562 nodes.
+
+(POS P40)
+
+ Match tree built with 4562 nodes.
+
+(POS P41)
+
+ Match tree built with 4562 nodes.
+
+(POS P42)
+
+ Match tree built with 4562 nodes.
+
+(POS P43)
+
+ Match tree built with 4562 nodes.
+
+(POS P44)
+
+ Match tree built with 4562 nodes.
+
+(POS P45)
+
+ Match tree built with 4562 nodes.
+
+(POS P46)
+
+ Match tree built with 4562 nodes.
+
+(POS P47)
+
+ Match tree built with 4562 nodes.
+
+(POS P48)
+
+ Match tree built with 4562 nodes.
+
+(POS P49)
+
+ Match tree built with 4562 nodes.
+
+(POS P50)
+
+ Match tree built with 4562 nodes.
+
+(POS P51)
+
+ Match tree built with 4562 nodes.
+
+(POS P52)
+
+ Match tree built with 4562 nodes.
+
+(POS P53)
+
+ Match tree built with 4562 nodes.
+
+(POS P54)
+
+ Match tree built with 4562 nodes.
+
+(POS P55)
+
+ Match tree built with 4562 nodes.
+
+(POS P56)
+
+ Match tree built with 4562 nodes.
+
+(POS P57)
+
+ Match tree built with 4562 nodes.
+
+(POS P58)
+
+ Match tree built with 4562 nodes.
+
+(POS P59)
+
+ Match tree built with 4562 nodes.
+
+(POS P60)
+
+ Match tree built with 4562 nodes.
+
+(POS P61)
+
+ Match tree built with 4562 nodes.
+
+(POS P62)
+
+ Match tree built with 4562 nodes.
+
+(POS P63)
+
+ Match tree built with 4562 nodes.
+
+(POS P64)
+
+ Match tree built with 4562 nodes.
+
+(POS P65)
+
+ Match tree built with 4562 nodes.
+
+(POS P66)
+
+ Match tree built with 4562 nodes.
+
+(POS P67)
+
+ Match tree built with 4562 nodes.
+
+(POS P68)
+
+ Match tree built with 4562 nodes.
+
+(POS P69)
+
+ Match tree built with 4562 nodes.
+
+(POS P70)
+
+ Match tree built with 4562 nodes.
+
+(POS P71)
+
+ Match tree built with 4562 nodes.
+
+(POS P72)
+
+ Match tree built with 4562 nodes.
+
+(POS P73)
+
+ Match tree built with 4562 nodes.
+
+(POS P74)
+
+ Match tree built with 4562 nodes.
+
+(POS P75)
+
+ Match tree built with 4562 nodes.
+
+(POS P76)
+
+ Match tree built with 4562 nodes.
+
+(POS P77)
+
+ Match tree built with 4562 nodes.
+
+(POS P78)
+
+ Match tree built with 4562 nodes.
+
+(POS P79)
+
+ Match tree built with 4562 nodes.
+
+(POS P80)
+
+ Match tree built with 4562 nodes.
+
+(POS P81)
+
+ Match tree built with 4562 nodes.
+
+(POS P82)
+
+ Match tree built with 4562 nodes.
+
+(POS P83)
+
+ Match tree built with 4562 nodes.
+
+(POS P84)
+
+ Match tree built with 4562 nodes.
+
+(POS P85)
+
+ Match tree built with 4562 nodes.
+
+(POS P86)
+
+ Match tree built with 4562 nodes.
+
+(POS P87)
+
+ Match tree built with 4562 nodes.
+
+(POS P88)
+
+ Match tree built with 4562 nodes.
+
+(POS P89)
+
+ Match tree built with 4562 nodes.
+
+(POS P90)
+
+ Match tree built with 4562 nodes.
+
+(POS P91)
+
+ Match tree built with 4562 nodes.
+
+(POS P92)
+
+ Match tree built with 4562 nodes.
+
+(POS P93)
+
+ Match tree built with 4562 nodes.
+
+(POS P94)
+
+ Match tree built with 4562 nodes.
+
+(POS P95)
+
+ Match tree built with 4562 nodes.
+
+(POS P96)
+
+ Match tree built with 4562 nodes.
+
+(POS P97)
+
+ Match tree built with 4562 nodes.
+
+(POS P98)
+
+ Match tree built with 4562 nodes.
+
+(POS P99)
+
+ Match tree built with 4562 nodes.
+
+(POS P100)
+
+ Match tree built with 4562 nodes.
+
+(POS P101)
+
+ Match tree built with 4562 nodes.
+
+(POS P102)
+
+ Match tree built with 4562 nodes.
+
+(POS P103)
+
+ Match tree built with 4562 nodes.
+
+(POS P104)
+
+ Match tree built with 4562 nodes.
+
+(POS P105)
+
+ Match tree built with 4562 nodes.
+
+(POS P106)
+
+ Match tree built with 4562 nodes.
+
+(POS P107)
+
+ Match tree built with 4562 nodes.
+
+(POS P108)
+
+ Match tree built with 4562 nodes.
+
+(POS P109)
+
+ Match tree built with 4562 nodes.
+
+(POS P110)
+
+ Match tree built with 4562 nodes.
+
+(POS P111)
+
+ Match tree built with 4562 nodes.
+
+(POS P112)
+
+ Match tree built with 4562 nodes.
+
+(POS P113)
+
+ Match tree built with 4562 nodes.
+
+(POS P114)
+
+ Match tree built with 4562 nodes.
+
+(POS P115)
+
+ Match tree built with 4562 nodes.
+
+(POS P116)
+
+ Match tree built with 4562 nodes.
+
+(POS P117)
+
+ Match tree built with 4562 nodes.
+
+(POS P118)
+
+ Match tree built with 4562 nodes.
+
+(POS P119)
+
+ Match tree built with 4562 nodes.
+
+(POS P120)
+
+ Match tree built with 4562 nodes.
+
+(POS P121)
+
+ Match tree built with 4562 nodes.
+
+(POS P122)
+
+ Match tree built with 4562 nodes.
+
+(POS P123)
+
+ Match tree built with 4562 nodes.
+
+(POS P124)
+
+ Match tree built with 4562 nodes.
+
+(POS P125)
+
+ Match tree built with 4562 nodes.
+
+(POS P126)
+
+ Match tree built with 4562 nodes.
+
+(POS P127)
+
+ Match tree built with 4562 nodes.
+
+(POS P128)
+
+ Match tree built with 4562 nodes.
+
+(POS P129)
+
+ Match tree built with 4562 nodes.
+
+(POS P130)
+
+ Match tree built with 4562 nodes.
+
+(POS P131)
+
+ Match tree built with 4562 nodes.
+
+(POS P132)
+
+ Match tree built with 4562 nodes.
+
+(POS P133)
+
+ Match tree built with 4562 nodes.
+
+(POS P134)
+
+ Match tree built with 4562 nodes.
+
+(POS P135)
+
+ Match tree built with 4562 nodes.
+
+(POS P136)
+
+ Match tree built with 4562 nodes.
+
+(POS P137)
+
+ Match tree built with 4562 nodes.
+
+(POS P138)
+
+ Match tree built with 4562 nodes.
+
+(POS P139)
+
+ Match tree built with 4562 nodes.
+
+(POS P140)
+
+ Match tree built with 4562 nodes.
+
+(POS P141)
+
+ Match tree built with 4562 nodes.
+
+(POS P142)
+
+ Match tree built with 4562 nodes.
+
+(POS P143)
+
+ Match tree built with 4562 nodes.
+
+(POS P144)
+
+ Match tree built with 4562 nodes.
+
+(POS P145)
+
+ Match tree built with 4562 nodes.
+
+(POS P146)
+
+ Match tree built with 4562 nodes.
+
+(POS P147)
+
+ Match tree built with 4562 nodes.
+
+(POS P148)
+
+ Match tree built with 4562 nodes.
+
+(POS P149)
+
+ Match tree built with 4562 nodes.
+
+(POS P150)
+
+ Match tree built with 4562 nodes.
+
+(POS P151)
+
+ Match tree built with 4562 nodes.
+
+(POS P152)
+
+ Match tree built with 4562 nodes.
+
+(POS P153)
+
+ Match tree built with 4562 nodes.
+
+(POS P154)
+
+ Match tree built with 4562 nodes.
+
+(POS P155)
+
+ Match tree built with 4562 nodes.
+
+(POS P156)
+
+ Match tree built with 4562 nodes.
+
+(POS P157)
+
+ Match tree built with 4562 nodes.
+
+(POS P158)
+
+ Match tree built with 4562 nodes.
+
+(POS P159)
+
+ Match tree built with 4562 nodes.
+
+(POS P160)
+
+ Match tree built with 4562 nodes.
+
+(POS P161)
+
+ Match tree built with 4562 nodes.
+
+(POS P162)
+
+ Match tree built with 4562 nodes.
+
+(POS P163)
+
+ Match tree built with 4562 nodes.
+
+(POS P164)
+
+ Match tree built with 4562 nodes.
+
+(POS P165)
+
+ Match tree built with 4562 nodes.
+
+(POS P166)
+
+ Match tree built with 4562 nodes.
+
+(POS P167)
+
+ Match tree built with 4562 nodes.
+
+(POS P168)
+
+ Match tree built with 4562 nodes.
+
+(POS P169)
+
+ Match tree built with 4562 nodes.
+
+(POS P170)
+
+ Match tree built with 4562 nodes.
+
+(POS P171)
+
+ Match tree built with 4562 nodes.
+
+(POS P172)
+
+ Match tree built with 4562 nodes.
+
+(POS P173)
+
+ Match tree built with 4562 nodes.
+
+(POS P174)
+
+ Match tree built with 4562 nodes.
+
+(POS P175)
+
+ Match tree built with 4562 nodes.
+
+(POS P176)
+
+ Match tree built with 4562 nodes.
+
+(POS P177)
+
+ Match tree built with 4562 nodes.
+
+(POS P178)
+
+ Match tree built with 4562 nodes.
+
+(POS P179)
+
+ Match tree built with 4562 nodes.
+
+(POS P180)
+
+ Match tree built with 4562 nodes.
+
+(POS P181)
+
+ Match tree built with 4562 nodes.
+
+(POS P182)
+
+ Match tree built with 4562 nodes.
+
+(POS P183)
+
+ Match tree built with 4562 nodes.
+
+(POS P184)
+
+ Match tree built with 4562 nodes.
+
+(POS P185)
+
+ Match tree built with 4562 nodes.
+
+(POS P186)
+
+ Match tree built with 4562 nodes.
+
+(POS P187)
+
+ Match tree built with 4562 nodes.
+
+(POS P188)
+
+ Match tree built with 4562 nodes.
+
+(POS P189)
+
+ Match tree built with 4562 nodes.
+
+(POS P190)
+
+ Match tree built with 4562 nodes.
+
+(POS P191)
+
+ Match tree built with 4562 nodes.
+
+(POS P192)
+
+ Match tree built with 4562 nodes.
+
+(POS P193)
+
+ Match tree built with 4562 nodes.
+
+(POS P194)
+
+ Match tree built with 4562 nodes.
+
+(POS P195)
+
+ Match tree built with 4562 nodes.
+
+(POS P196)
+
+ Match tree built with 4562 nodes.
+
+(POS P197)
+
+ Match tree built with 4562 nodes.
+
+(POS P198)
+
+ Match tree built with 4562 nodes.
+
+(POS P199)
+
+ Match tree built with 4562 nodes.
+
+(POS P200)
+
+ Match tree built with 4562 nodes.
+
+(POS P201)
+
+ Match tree built with 4562 nodes.
+
+(POS P202)
+
+ Match tree built with 4562 nodes.
+
+(POS P203)
+
+ Match tree built with 4562 nodes.
+
+(POS P204)
+
+ Match tree built with 4562 nodes.
+
+(POS P205)
+
+ Match tree built with 4562 nodes.
+
+(POS P206)
+
+ Match tree built with 4562 nodes.
+
+(POS P207)
+
+ Match tree built with 4562 nodes.
+
+(POS P208)
+
+ Match tree built with 4562 nodes.
+
+(POS P209)
+
+ Match tree built with 4562 nodes.
+
+(POS P210)
+
+ Match tree built with 4562 nodes.
+
+(POS P211)
+
+ Match tree built with 4562 nodes.
+
+(POS P212)
+
+ Match tree built with 4562 nodes.
+
+(POS P213)
+
+ Match tree built with 4562 nodes.
+
+(POS P214)
+
+ Match tree built with 4562 nodes.
+
+(POS P215)
+
+ Match tree built with 4562 nodes.
+
+(POS P216)
+
+ Match tree built with 4562 nodes.
+
+(POS P217)
+
+ Match tree built with 4562 nodes.
+
+(POS P218)
+
+ Match tree built with 4562 nodes.
+
+(POS P219)
+
+ Match tree built with 4562 nodes.
+
+(POS P220)
+
+ Match tree built with 4562 nodes.
+
+(POS P221)
+
+ Match tree built with 4562 nodes.
+
+(POS P222)
+
+ Match tree built with 4562 nodes.
+
+(POS P223)
+
+ Match tree built with 4562 nodes.
+
+(POS P224)
+
+ Match tree built with 4562 nodes.
+
+(POS P225)
+
+ Match tree built with 4562 nodes.
+
+(POS P226)
+
+ Match tree built with 4562 nodes.
+
+(POS P227)
+
+ Match tree built with 4562 nodes.
+
+(POS P228)
+
+ Match tree built with 4562 nodes.
+
+(POS P229)
+
+ Match tree built with 4562 nodes.
+
+(POS P230)
+
+ Match tree built with 4562 nodes.
+
+(POS P231)
+
+ Match tree built with 4562 nodes.
+
+(POS P232)
+
+ Match tree built with 4562 nodes.
+
+(POS P233)
+
+ Match tree built with 4562 nodes.
+
+(POS P234)
+
+ Match tree built with 4562 nodes.
+
+(POS P235)
+
+ Match tree built with 4562 nodes.
+
+(POS P236)
+
+ Match tree built with 4562 nodes.
+
+(POS P237)
+
+ Match tree built with 4562 nodes.
+
+(POS P238)

@@ -1,0 +1,139 @@
+#ifndef __H_CIRP__
+#define __H_CIRP__
+
+#include <aptk/search_prob.hxx>
+#include <aptk/heuristic.hxx>
+#include <strips_state.hxx>
+#include <strips_prob.hxx>
+#include <fwd_search_prob.hxx>
+#include "planrec.hxx"
+#include "h_rp.hxx"
+
+using	aptk::agnostic::Fwd_Search_Problem;
+using aptk::agnostic::Plan_Recognition_Heuristic;
+typedef Plan_Recognition_Heuristic<Fwd_Search_Problem,true>	H_APR;
+typedef Plan_Recognition_Heuristic<Fwd_Search_Problem,false>	H_PR;
+
+namespace aptk {
+
+namespace agnostic {
+
+template < typename Search_Model, bool approx >
+class	Plan_Conditional_Independence_Recognition_Heuristic : public Heuristic<State> {
+public:
+
+	Plan_Conditional_Independence_Recognition_Heuristic( const Search_Model& prob)
+	: Heuristic<State>( prob ), m_strips_model( prob.task()){
+	}
+
+	virtual ~Plan_Conditional_Independence_Recognition_Heuristic() {
+	}
+
+  template <typename Search_Node>
+  void eval( Search_Node* n, float& h_val) {
+
+    if (n->parent() == NULL){
+      h_val = m_strips_model.goal_set(m_strips_model).size()-1;
+      n->set_og(m_strips_model.priors(m_strips_model));
+      //std::cout << "Rank: " << h_val << std::endl;
+      return;
+    }
+
+    // Get observations by taking the last action
+    std::vector<unsigned int> observations;
+    observations.push_back(n->action());
+
+    /*
+     *std::cout << "Observations: " << std::endl;
+     *for (unsigned int i = 0; i < observations.size(); i++){
+     *  std::cout << observations[i] << ": " << m_strips_model.actions()[observations[i]]->signature() << std::endl;
+     *}
+     */
+
+    std::vector<aptk::Fluent_Vec> goal_set = m_strips_model.goal_set(m_strips_model);
+    std::vector<double> priors = n->parent()->og();
+    float beta = m_strips_model.beta(m_strips_model);
+    unsigned int index = 0;
+    float rank = 1;
+
+    std::vector<double> posteriors;
+    aptk::Fluent_Vec init = m_strips_model.init();
+
+    // Do plan recognition to produce posteriors
+    if (!approx)
+      posteriors =  plan_recognition(m_strips_model, goal_set, priors, observations, \
+          n->parent()->state()->fluent_vec(), beta);
+    else
+      posteriors =  plan_recognition_approx(m_strips_model, goal_set, priors, observations, \
+          n->parent()->state()->fluent_vec(), beta);
+
+    //std::cout << "Priors: " << std::endl;
+    //print_vector(priors);
+    //std::cout << "Posteriors: " << std::endl;
+    //print_vector(posteriors);
+
+    n->set_og(posteriors);
+
+    // Get index of goal in goal candidate set
+    for (unsigned int i = 0; i < goal_set.size(); i++){
+      if (goal_set[i] == m_strips_model.goal())
+        index = i;
+    }
+
+    // Count the number of goals with greater posterior than the goal
+    for (unsigned int i = 0; i < posteriors.size(); i++){
+      if (index != i)
+        if (posteriors[i] >= posteriors[index])
+          rank++;
+    }
+
+    rank += (1-posteriors[index]);
+    //std::cout << "Rank: " << rank << std::endl;//<< std::endl;
+
+    h_val = 1 - posteriors[index];
+    //h_val = rank;
+
+/*
+ *    Fwd_Search_Problem fw(&m_strips_model);
+ *    std::cout << std::endl << "Exact Approximate start:" << std::endl;
+ *    H_APR h_apr(fw);
+ *    float h_aprn;
+ *    h_apr.eval(n, h_aprn);
+ *    std::cout << "\tExact Approximate: " << h_aprn << std::endl;
+ *
+ *    std::cout << std::endl << "Condin Start: " << std::endl;
+ *    posteriors =  plan_recognition(m_strips_model, goal_set, priors, observations, n->state()->fluent_vec(), beta);
+ *
+ *    index = 0;
+ *    rank = 1;
+ *    // Get index of goal in goal candidate set
+ *    for (unsigned int i = 0; i < goal_set.size(); i++){
+ *      if (goal_set[i] == m_strips_model.goal())
+ *        index = i;
+ *    }
+ *
+ *    // Count the number of goals with greater posterior than the goal
+ *    for (unsigned int i = 0; i < posteriors.size(); i++){
+ *      if (index != i)
+ *        if (posteriors[i] >= posteriors[index])
+ *          rank++;
+ *    }
+ *
+ *    rank += (1-posteriors[index]);
+ *    std::cout << "Exact Condin Rank: " << rank << std::endl;//<< std::endl;
+ */
+
+  }
+
+
+protected:
+
+	const STRIPS_Problem&	m_strips_model;
+
+};
+
+}
+
+}
+
+#endif
